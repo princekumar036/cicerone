@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Guide @ Cicerone</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style_eguide.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-3" id="navigationArea">
+			<div id="logoBG"><a href="/"><img src="logo.png" id="logo" class="img-fluid"></a></div>
+			<div class="container" id="searchGroup">
+				<div class="form-group form-group-lg" id="inputGroup">
+			    	<input type="text" class="form-control" placeholder="Search any place..." id="input">
+			  	</div>
+			  	<div id="searchSuggestionGroup"></div>
+			</div>
+			<hr>
+			<div id="navigator"></div>
+			<div id="spacer"></div>
+		</div>
+
+		<div class="col-9" id="contentArea">
+			<div id="bannerGroup" class="jumbotron"><h1 id="pageTitle" class="display-4"></h1></div>
+			<hr>
+			<div id="content"></div>
+			<div id="spacer"></div>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<p>The travel guide is taken from wikivoyage.org. Visit <a href="" id="guideLink" target="_blank">this page</a> for a detailed guide.
+		<a href="#" id="locationLink" target="_blank">
+			<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+			<span id="googleImageLocation"></span>
+		</a>
+	</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="script_eguide.js"></script>
+</body>
+</html>
